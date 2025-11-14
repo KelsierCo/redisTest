@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction xmlns="http://www.w3schools.com" transactionName="CGTOT001" application="CGTO" version="01" country="CO" language="ES">
+	<paramsIn>
+		<dto order="1" name="entrada" mandatory="1" package="com.bbva.cgto.dto.response.EntradaDTO" artifactId="CGTOC001">
+			<parameter order="1" name="officeId" mandatory="1" type="String" size="50"/>
+			<parameter order="2" name="turnoId" mandatory="1" type="String" size="50"/>
+			<parameter order="3" name="conceptTurno" mandatory="1" type="String" size="1"/>
+			<parameter order="4" name="tipoAtencion" mandatory="1" type="Long" size="20"/>
+			<parameter order="5" name="servicePriority" mandatory="1" type="Long" size="20"/>
+			<parameter order="6" name="segmentoPriority" mandatory="1" type="Long" size="20"/>
+		</dto>
+	</paramsIn>
+	<paramsOut>
+		<dto order="1" name="respuesta" mandatory="1" package="com.bbva.cgto.dto.response.ResponseDTO" artifactId="CGTOC001">
+			<parameter order="1" name="mensaje" mandatory="1" type="String" size="100"/>
+		</dto>
+	</paramsOut>
+	<description>'Response</description>
+</transaction>
